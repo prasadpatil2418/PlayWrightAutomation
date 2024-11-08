@@ -34,6 +34,8 @@ test('MultipleElements',async ({page})=>{
 
     await page.goto("https://www.demoblaze.com/")
 
+    //page.waitForSelector("locator") is used sometimes
+
      const links= await page.$$('a') // locate multiple element 
 
      for(const link of links){
